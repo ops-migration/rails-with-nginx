@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "81:80"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://backend:3000/api/hello
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3000"
