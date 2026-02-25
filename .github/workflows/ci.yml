@@ -20,7 +20,7 @@ jobs:
     uses: ops-migration/central-shared-workflow/.github/workflows/ci-workflow.yml@main
     with:
       aws-region: "us-east-1"
-      target-branch: "feature-dev-i"
+      target-branch: "dev-i"
       ecr-repository: 'myapp-rails'
       ecr-repository-nginx: 'myapp-nginx'
       dockerfile-path: './backend'
