@@ -19,9 +19,12 @@ jobs:
   ci:
     uses: ops-migration/central-shared-workflow/.github/workflows/ci-workflow.yml@main
     with:
-      ecr-repository: "app-2"
       aws-region: "us-east-1"
       target-branch: "feature-dev-i"
+      ecr-repository: 'myapp-rails'
+      ecr-repository-nginx: 'myapp-nginx'
+      dockerfile-path: '.'
+      dockerfile-path-nginx: './nginx'
       sonar-enabled: true
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
