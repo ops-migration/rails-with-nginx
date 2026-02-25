@@ -3,7 +3,9 @@ name: CD - Deploy to dev
 on:
   push:
     branches:
-      - feature-dev-i
+      - dev-i
+    paths:
+      - 'config.json'
 
 jobs:
   deploy-qa:
