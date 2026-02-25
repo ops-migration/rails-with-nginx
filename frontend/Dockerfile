@@ -1,5 +1,5 @@
 # Build React app
-FROM node:20 AS builder
+FROM public.ecr.aws/docker/library/node:20 AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # Serve with NGINX
-FROM nginx:alpine
+FROM public.ecr.aws/docker/library/nginx:alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
