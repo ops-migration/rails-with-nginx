@@ -1,0 +1,5 @@
+{
+  "rails_image_uri": "533267275979.dkr.ecr.us-east-1.amazonaws.com/myapp-rails:d4e0713db136d8ce60547b5d6065f8efa90433b6",
+  "nginx_image_uri": "533267275979.dkr.ecr.us-east-1.amazonaws.com/myapp-nginx:d4e0713db136d8ce60547b5d6065f8efa90433b6",
+  "commit_hash": "d4e0713db136d8ce60547b5d6065f8efa90433b6"
+}
