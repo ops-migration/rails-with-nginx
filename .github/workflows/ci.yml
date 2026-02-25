@@ -23,8 +23,8 @@ jobs:
       target-branch: "feature-dev-i"
       ecr-repository: 'myapp-rails'
       ecr-repository-nginx: 'myapp-nginx'
-      dockerfile-path: '.'
-      dockerfile-path-nginx: './nginx'
+      dockerfile-path: './backend'
+      dockerfile-path-nginx: './frontend'
       sonar-enabled: true
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
