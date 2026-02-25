@@ -1,1 +1,1 @@
-# rails-with-nginx 
+# rails-with-nginx-appl
