@@ -3,18 +3,14 @@ name: CD - Deploy to dev
 on:
   push:
     branches:
-      - dev-i
-    paths:
-      - 'config.json'
+      - feauture-dev-i
 
+permissions:
+  contents: read
+  id-token: write
+  
 jobs:
-  deploy-qa:
+  deploy-dev:
     uses: ops-migration/central-shared-workflow/.github/workflows/cd-workflow.yml@main
     with:
-      ecs-cluster: "dev-app"
-      ecs-service: "dev-app"
-      cf-stack-name: "dev-ecs-stack"
-      target-env: "dev"
-      environment-name: "dev"
-      environment-url: "https://dev-app.com"
-      aws-region: "us-east-1"
+      cf-stack-name: "dev-stack"
