@@ -3,7 +3,7 @@ name: CD - Deploy to dev
 on:
   push:
     branches:
-      - feauture-dev-i
+      - dev-i
 
 permissions:
   contents: read
