@@ -1,5 +1,5 @@
 {
-  "rails_image_uri": "106237071060.dkr.ecr.us-east-1.amazonaws.com/myapp-rails:fe6a9a70802e25d5e85580aca3ad1258fb8285ca",
-  "nginx_image_uri": "106237071060.dkr.ecr.us-east-1.amazonaws.com/myapp-nginx:fe6a9a70802e25d5e85580aca3ad1258fb8285ca",
-  "commit_hash": "fe6a9a70802e25d5e85580aca3ad1258fb8285ca"
+  "rails_image_uri": "106237071060.dkr.ecr.us-east-1.amazonaws.com/myapp-rails:b1d8c29718da3419966b8130992a81a52fa8a3e2",
+  "nginx_image_uri": "106237071060.dkr.ecr.us-east-1.amazonaws.com/myapp-nginx:b1d8c29718da3419966b8130992a81a52fa8a3e2",
+  "commit_hash": "b1d8c29718da3419966b8130992a81a52fa8a3e2"
 }
