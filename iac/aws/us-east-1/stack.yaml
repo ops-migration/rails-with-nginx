@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Nested ECR / ECS stack for function-manager'
 
-# ─── Parameters ─────────────────────────────────────────────────────────
+# ─── Parameters ────────────────────────────────────────────────────────
 Parameters:
   RailsImage:
     Type: String                          # always required 
