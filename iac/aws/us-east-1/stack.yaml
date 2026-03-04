@@ -99,7 +99,7 @@ Resources:
         TaskCPU: 512
         TaskMemory: 1024
         TaskRoleArn: !GetAtt FunctionManagerIAMStack.Outputs.TaskRoleArn
-        ExecutionRoleArn: "arn:aws:iam::106237071060:role/service-role/codebuild-ecs-workflow-service-role"
+        ExecutionRoleArn: "arn:aws:iam::106237071060:role/dev-myapp-execution-role"
 
   # ─────── Task Definition Single stack ─────────────────────────────
   FunctionManagerTaskDefSingleStack:
